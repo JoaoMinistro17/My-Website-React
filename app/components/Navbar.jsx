@@ -14,29 +14,46 @@ function Navbar() {
       setIcon("nav__toggler toggle");
     } else setIcon("nav__toggler");
   };
+
   return (
     <nav className="nav">
-      <a href="" className="nav__brand">
-        
+      <a href="#" className="nav__brand">
+        {/* Brand Logo or Name */}
       </a>
       <ul className={active}>
         <li className="nav__item">
-          <a href="#" className="nav__link">
+          <a className="nav__link" onClick={() => {
+            document.getElementById("home")?.scrollIntoView({ 
+              behavior: "smooth" 
+            });
+          }}>
             Home
           </a>
         </li>
         <li className="nav__item">
-          <a href="#" className="nav__link">
+          <a className="nav__link" onClick={() => {
+            document.getElementById("about")?.scrollIntoView({ 
+              behavior: "smooth" 
+            });
+          }}>
             About
           </a>
         </li>
         <li className="nav__item">
-          <a href="#" className="nav__link">
+          <a className="nav__link" onClick={() => {
+            document.getElementById("portfolio")?.scrollIntoView({ 
+              behavior: "smooth" 
+            });
+          }}>
             Portfolio
           </a>
         </li>
         <li className="nav__item">
-          <a href="#" className="nav__link">
+          <a className="nav__link" onClick={() => {
+            document.getElementById("skills")?.scrollIntoView({ 
+              behavior: "smooth" 
+            });
+          }}>
             Skills
           </a>
         </li>

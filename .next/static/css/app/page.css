@@ -18,15 +18,12 @@ html, body {
   min-height: 100vh; /* Ensure the page is tall enough to scroll */
   max-height: 100vh;
   z-index: 1; /* Ensure content is above the background */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.65) 100%);
 }
 
-.page2{
-  position: relative;
-  min-height: 100vh; /* Ensure the page is tall enough to scroll */
-  max-height: 100vh;
+#home {
+  min-height: 100vh;
 }
-
 
 .background {
   background-image: url(/_next/static/media/johannes-plenio-hvrpOmuMrAI-unsplash.78ada5e1.jpg);
@@ -45,11 +42,12 @@ html, body {
   left: 0;
   right: 0;
   height: 10px;
-  background: rgb(0, 0, 100);
+  background: rgb(0, 33, 65);
   transform-origin: 0%;
   z-index: 2;
 }
 
+/* Position the background image absolutely */
 .header {
   position: relative;
   color: hsl(0, 0%, 68%);
@@ -59,13 +57,11 @@ html, body {
   overflow: hidden;
   border-right: 2px solid hsl(0, 0%, 80%);
   white-space: nowrap;
-  animation: typewriter 1.5s steps(40) 1.5s 1 normal both,
+  animation: typewriter 1.5s steps(40) 0.5s 1 normal both,
   blinkTextCursor 700ms infinite;
   text-align: left;
-  margin-top: 700px;
+  margin-top: 750px;
   margin-left: 60%;
-  
-   
 }
 
 @keyframes typewriter {
@@ -73,7 +69,7 @@ html, body {
     width: 0px;
   }
   to {
-    width: 600px;
+    width: 650px;
   }
 }
 @keyframes blinkTextCursor {
@@ -86,18 +82,16 @@ html, body {
 }
 
 /* Footer Logos */
-.aaa{
+.about{
   text-align: center;
   width: 100%;
-  margin-top: 200px;
-
+  height: 100%;
 }
 
 .footer{
-  text-align: center;
-  width: 100%;
-  margin-top: 650px;
-  margin-left: 700px;
+  text-align: right;
+  margin-right: 100px;
+  margin-bottom: 10px;
 }
 
 .navbar {
@@ -111,3 +105,304 @@ html, body {
 .navbar-scrolled {
   background: #000;
 }
+/*!************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/navbar.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************/
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 2rem;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(204, 204, 204);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 8vh;
+  /*background: rgb(0, 33, 65);*/
+  /*background: linear-gradient(180deg, rgba(0,33,65,1) 0%, rgba(0,33,65,0) 100%);*/
+  position: fixed; /* Make the navbar fixed */
+  top: 0; /* Position it at the top */
+  width: 100%; /* Make it span the full width */
+  z-index: 1000; /* Ensure it stays above other content */
+
+}
+.nav__brand {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 12rem;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: larger;
+  margin-left: 50rem;
+}
+.nav__toggler {
+  display: none;
+}
+.nav__toggler div {
+  width: 2.5rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: rgb(204, 204, 204);
+  transition: 0.3s ease-in;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__toggler {
+    display: block;
+    cursor: pointer;
+  }
+  .nav__menu {
+    position: fixed;
+    top: 7vh;
+    right: 0;
+    height: 93vh;
+    width: 50vh;
+    background: rgb(0, 33, 65);
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+  }
+}
+/* Active Class */
+.nav__active {
+  transform: translateX(0%);
+}
+
+/* Toggle Icon Animation */
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-4px, -5px);
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/aboutme.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+.aboutme {
+  padding: 20px;
+  background: black; /* Fundo preto */
+  text-align: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1s ease-in-out;
+}
+
+.aboutme.animate {
+  opacity: 1; /* Fade in when visible */
+} 
+
+.aboutme__title {
+  margin-top: 150px;  
+  font-size: 4rem;
+  color: whitesmoke; /* Texto branco */
+}
+
+.aboutme__description {
+  margin-top: 50px;
+  font-size: 1.8rem;
+  color: whitesmoke; /* Texto branco */
+}
+
+.aboutme__skills {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.animate .aboutme__title {
+  animation: slideInFromLeft 1s ease-in-out;
+}
+
+.animate .aboutme__description {
+  animation: slideInFromRight 1s ease-in-out;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/portfolio.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************/
+.portfolio {
+  padding: 50px;
+  background: black; /* Fundo preto */
+  text-align: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1s ease-in-out;
+}
+
+.portfolio.animate {
+  opacity: 1; /* Fade in when visible */
+}
+
+.portfolio__title {
+  margin-top: 150px;
+  font-size: 4rem;
+  color: whitesmoke; /* Texto branco */
+}
+
+.portfolio__description {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  color: whitesmoke; /* Texto branco */
+}
+
+.animate .portfolio__title {
+  animation: slideInFromLeft 1s ease-in-out;
+}
+
+.animate .portfolio__description {
+  animation: slideInFromRight 1s ease-in-out;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/*!************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/skills.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************/
+.skills {
+    padding: 20;
+    background: black; /* Fundo preto */
+    text-align: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .skills.animate {
+    opacity: 1; /* Fade in when visible */
+  }
+  
+  .skills__title {
+    margin-top: 150px;
+    font-size: 4rem;
+    color: whitesmoke; /* Texto branco */
+  }
+  
+  .skills__description {
+    margin-top: 50px;
+    font-size: 1.8rem;
+    color: whitesmoke; /* Texto branco */
+  }
+  
+  .skills__list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .skill {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .animate .skills__title {
+    animation: slideInFromLeft 1s ease-in-out;
+  }
+  
+  .animate .skills__description {
+    animation: slideInFromRight 1s ease-in-out;
+  }
+  
+  .animate .skill {
+    animation: bounce 1.5s infinite;
+  }
+  
+  @keyframes slideInFromLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }

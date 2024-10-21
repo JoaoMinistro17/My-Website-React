@@ -37,7 +37,15 @@ function Skills() {
         <p className={`skills__description; ${isVisible ? 'slideInFromRight' : ''}`}>
             Here are some of my Skills.
         </p>
-        <div className="skills__background"></div>
+        <p className={`skills__description; ${isVisible ? 'slideInFromRight' : ''}`}>
+            Here are some of my Skills.
+        </p>
+        <p className={`skills__description; ${isVisible ? 'slideInFromRight' : ''}`}>
+            Here are some of my Skills.
+        </p>
+        <p className={`skills__description; ${isVisible ? 'slideInFromRight' : ''}`}>
+            Here are some of my Skills.
+        </p>
         </div>
     )
 }
