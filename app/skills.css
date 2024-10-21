@@ -1,0 +1,83 @@
+.skills {
+    padding: 50px;
+    background: black; /* Fundo preto */
+    text-align: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .skills.animate {
+    opacity: 1; /* Fade in when visible */
+  }
+  
+  .skills__title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white; /* Texto branco */
+  }
+  
+  .skills__description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: white; /* Texto branco */
+  }
+  
+  .skills__list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .skill {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .animate .skills__title {
+    animation: slideInFromLeft 1s ease-in-out;
+  }
+  
+  .animate .skills__description {
+    animation: slideInFromRight 1s ease-in-out;
+  }
+  
+  .animate .skill {
+    animation: bounce 1.5s infinite;
+  }
+  
+  @keyframes slideInFromLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }

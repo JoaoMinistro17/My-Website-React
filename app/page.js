@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useState } from 'react';
-import LikeButton from './like-button';
 import Particles from 'particlesjs';
 import { motion, useScroll } from "framer-motion";
 import './page.css';

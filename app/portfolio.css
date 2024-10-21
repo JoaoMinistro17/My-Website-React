@@ -1,0 +1,53 @@
+.portfolio {
+  padding: 50px;
+  background: black; /* Fundo preto */
+  text-align: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1s ease-in-out;
+}
+
+.portfolio.animate {
+  opacity: 1; /* Fade in when visible */
+}
+
+.portfolio__title {
+  margin-top: 100px;
+  font-size: 4rem;
+  color: whitesmoke; /* Texto branco */
+}
+
+.portfolio__description {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  color: whitesmoke; /* Texto branco */
+}
+
+.animate .portfolio__title {
+  animation: slideInFromLeft 1s ease-in-out;
+}
+
+.animate .portfolio__description {
+  animation: slideInFromRight 1s ease-in-out;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
