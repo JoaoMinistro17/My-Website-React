@@ -4,6 +4,7 @@
   text-align: center;
   opacity: 0; /* Initially hidden */
   transition: opacity 1s ease-in-out;
+  min-height: 80vh;
 }
 
 .aboutme.animate {
@@ -16,8 +17,14 @@
   color: whitesmoke; /* Texto branco */
 }
 
+.aboutme__subtitle{
+  margin-top: 70px;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: blueviolet; /* Texto branco */
+}
+
 .aboutme__description {
-  margin-top: 50px;
   font-size: 1.8rem;
   color: whitesmoke; /* Texto branco */
 }

@@ -15,15 +15,11 @@ html, body {
   min-height: 100vh; /* Ensure the page is tall enough to scroll */
   max-height: 100vh;
   z-index: 1; /* Ensure content is above the background */
-  background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.65) 100%);
-}
-
-#home {
-  min-height: 100vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.6) 100%);
 }
 
 .background {
-  background-image: url('img/johannes-plenio-hvrpOmuMrAI-unsplash.jpg');
+  background-image: url('../public/img/johannes-plenio-hvrpOmuMrAI-unsplash.jpg');
   background-size: cover;
   background-position: center;
   position: absolute; /* Position the background image absolutely */
@@ -54,8 +50,8 @@ html, body {
   overflow: hidden;
   border-right: 2px solid hsl(0, 0%, 80%);
   white-space: nowrap;
-  animation: typewriter 1.5s steps(40) 0.5s 1 normal both,
-  blinkTextCursor 700ms infinite;
+  animation: typewriter 2s steps(40) 0.5s 1 normal both,
+  blinkTextCursor 800ms infinite;
   text-align: left;
   margin-top: 750px;
   margin-left: 60%;

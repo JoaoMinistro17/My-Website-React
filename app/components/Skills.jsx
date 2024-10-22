@@ -1,8 +1,7 @@
-
 import React, { useState, useRef, useEffect } from 'react';
 import '../skills.css';
 
-function Skills() {
+export default function Skills() {
 
     const containerRef = useRef(null);
      const [isVisible, setIsVisible] = useState(false);
@@ -15,7 +14,7 @@ function Skills() {
      const options = {
        root: null,
        rootMargin: "0px",
-       threshold: 1.0
+       threshold: 0.7
      }
    
      useEffect(() => {
@@ -49,5 +48,3 @@ function Skills() {
         </div>
     )
 }
-
-export default Skills;

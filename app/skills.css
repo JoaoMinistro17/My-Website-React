@@ -1,9 +1,10 @@
 .skills {
-    padding: 20;
+    padding: 20px;
     background: black; /* Fundo preto */
     text-align: center;
     opacity: 0; /* Initially hidden */
     transition: opacity 1s ease-in-out;
+    min-height: 100vh;
   }
   
   .skills.animate {
@@ -11,7 +12,7 @@
   }
   
   .skills__title {
-    margin-top: 150px;
+    margin-top: 100px;
     font-size: 4rem;
     color: whitesmoke; /* Texto branco */
   }
