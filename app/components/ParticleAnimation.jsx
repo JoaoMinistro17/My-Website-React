@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import Particles from 'particlesjs';
 
 export default function ParticleAnimation() {
-
   useEffect(() => {
     Particles.init({
       selector: '.background',

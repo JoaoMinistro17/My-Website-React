@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import '../portfolio.css';
+import '../css/portfolio.css';
 
 export default function Portfolio() {
 
@@ -13,8 +13,8 @@ export default function Portfolio() {
 
   const options = {
     root: null,
-    rootMargin: "0px",
-    threshold: 0.7
+    rootMargin: "100px",
+    threshold: 0.4
   }
 
   useEffect(() => {
@@ -32,22 +32,22 @@ export default function Portfolio() {
   return (
     <div className={`portfolio ${isVisible ? 'animate' : ''}`} id="portfolio" ref={containerRef}>
 
-      <h2 className={`portfolio__title ${isVisible ? 'slideInFromLeft' : ''}`}>Portfolio</h2>
+      <h1 className={`portfolio__title ${isVisible}`}>Portfolio</h1>
 
-      <h1 className={`portfolio__subtitle ${isVisible ? 'slideInFromLeft' : ''}`}>Project 1</h1>
-      <p className={`portfolio__description; ${isVisible ? 'slideInFromRight' : ''}`}>
-        <br />Created a web app that does x and y. <br /> 
+      <h1 className={`portfolio__subtitle ${isVisible}`}>Simple Ticket HelpDesk</h1>
+      <p className={`portfolio__description ${isVisible}`}>
+        Lorem Ipsum 
       </p>
-      <p className={`portfolio__description; ${isVisible ? 'slideInFromRight' : ''}`}>
-        Reminder to be valuable and solve problems for others.
-      </p>
-      <h1 className={`portfolio__subtitle ${isVisible ? 'slideInFromLeft' : ''}`}>Project 2</h1>
-      <p className={`portfolio__description; ${isVisible ? 'slideInFromRight' : ''}`}>
+      <img src="img/desafio-fullstack-junior.png" alt="Project 1 Home" className="portfolio__image" />
+
+      <h1 className={`portfolio__subtitle ${isVisible}`}>Project 2</h1>
+      <p className={`portfolio__description ${isVisible}`}>
         <br /> I did this project with this framework, solved x and y problem. <br />
       </p>
-      <p className={`portfolio__description; ${isVisible ? 'slideInFromRight' : ''}`}>
-        bla bla bla ...
+      <p className={`portfolio__description ${isVisible}`}>
+        Reminder to be valuable and solve problems for others.
       </p>
+      <img src="img/desafio-fullstack-junior.png" alt="Project 2 Home" className="portfolio__image" />
 
       <a href="/cv-joao-ministro.pdf" download="joao-ministro-portfolio.pdf" className="portfolio__download">
         Download Portfolio PDF

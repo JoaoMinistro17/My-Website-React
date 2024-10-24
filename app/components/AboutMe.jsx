@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import '../aboutme.css';
+import '../css/aboutme.css';
 
 function AboutMe() {
   
@@ -29,20 +29,20 @@ function AboutMe() {
   return (
     <div className={`aboutme ${isVisible ? 'animate' : ''}`} id="about" ref={containerRef}>
 
-      <h1 className={`aboutme__title ${isVisible ? 'slideInFromLeft' : ''}`}>About Me</h1>
+      <h1 className={`aboutme__title ${isVisible}`}>About Me</h1>
 
-      <h1 className={`aboutme__subtitle ${isVisible ? 'slideInFromLeft' : ''}`}>Software Developer</h1>
-      <p className={`aboutme__description; ${isVisible ? 'slideInFromRight' : ''}`}>
-        I'm a passionate developer who loves writing code.
+      <h1 className={`aboutme__subtitle ${isVisible}`}>Information Systems Engineer</h1>
+      <p className={`aboutme__description ${isVisible}`}>
+        I'm passionate about exploring the world through technology. <br />
+      </p>
+      <p className={`aboutme__description ${isVisible}`}>
+        In this field I find a way to create, 
+        where logic and creativity merge to solve problems and turn ideas into reality.
       </p>
 
-      <h1 className={`aboutme__subtitle ${isVisible ? 'slideInFromLeft' : ''}`}>Free Time</h1>
-      <p className={`aboutme__description; ${isVisible ? 'slideInFromRight' : ''}`}>
-        I like to read books about self-improvement, finances and coding related. <br />
-        My favourite book is 12 rules for life by Jordan Peterson.
-      </p>
-      <p className={`aboutme__description; ${isVisible ? 'slideInFromRight' : ''}`}>
-        Also love piano and video games.
+      <h1 className={`aboutme__subtitle ${isVisible}`}>Free Time</h1>
+      <p className={`aboutme__description ${isVisible}`}>
+        My 4 most fulfilling hobbies currently are: Books, piano, football and videogames.
       </p>
     </div>
   );

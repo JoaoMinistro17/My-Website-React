@@ -1,0 +1,79 @@
+.portfolio {
+  padding: 20px;
+  background: black; /* Fundo preto */
+  text-align: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1s ease-in-out;
+  min-height: 80vh;
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+.portfolio.animate {
+  opacity: 1; /* Fade in when visible */
+}
+
+.portfolio__title {
+  margin-top: 200px;  
+  font-size: 5rem;
+  color: whitesmoke; /* Texto branco */
+}
+
+.portfolio__subtitle{
+  margin-top: 100px;
+  font-size: 3rem;
+  color: blueviolet; /* Texto branco */
+  margin-bottom: 20px;
+}
+
+.portfolio__description {
+  font-size: 2rem;
+  color: whitesmoke; /* Texto branco */
+  margin-bottom: 10px;
+}
+
+.portfolio__image {
+  margin-top: 20px;
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.portfolio__download {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #025843;
+  color: whitesmoke;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 80%;
+}
+
+.animate .portfolio__title {
+  animation: slideInFromLeft 1s ease-in-out;
+}
+
+.animate .portfolio__subtitle {
+  animation: slideInFromRight 1s ease-in-out;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
