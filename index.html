@@ -1,0 +1,11 @@
+"homepage": "https://joaoministro17.github.io/My-Website-React/"
+
+<script>
+    const redirectToIndex = () => {
+      const pathname = window.location.pathname;
+      if (!pathname.startsWith('/My-Website-React/')) {
+        window.location.href = '/My-Website-React/';
+      }
+    };
+    redirectToIndex();
+  </script>
