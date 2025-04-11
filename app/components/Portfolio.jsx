@@ -62,7 +62,9 @@ export default function Portfolio() {
         Role-based access <br /> <br />
         Core e-commerce features (product listing, cart structure, order handling, etc.) <br />
       </p>
-      <img src="test.png" alt="Project 2" className="portfolio__image" />
+
+      {/*<img src="test.png" alt="Project 2" className="portfolio__image" />*/}
+    
     </div>
   );
 }

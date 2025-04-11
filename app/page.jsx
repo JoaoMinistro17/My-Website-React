@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
+import dynamic from 'next/dynamic';
+
 import './page.css';
 
 import Footer from './components/Footer';
@@ -8,10 +10,14 @@ import Navbar from './components/Navbar';
 import AboutMe from './components/AboutMe';
 import Portfolio from './components/Portfolio';
 import Skills from './components/Skills';
-import ParticleAnimation from './components/ParticleAnimation';
+//import ParticleAnimation from './components/ParticleAnimation';
 import ScrollProgress from './components/ScrollProgress';
 
 import { SlArrowRight } from "react-icons/sl";
+
+const ParticleAnimation = dynamic(() => import('./components/ParticleAnimation'), {
+  ssr: false, 
+});
 
 export default function HomePage() {
 
@@ -51,6 +57,7 @@ export default function HomePage() {
 
   return (
   <>    
+    <ParticleAnimation />
 
     <ScrollProgress />
 
@@ -58,7 +65,6 @@ export default function HomePage() {
 
     {/* <!-- Home Page --> */}
     <div className="page" id="home" style={{ position: 'relative', overflow: 'hidden' }}>  
-      <ParticleAnimation/> 
       <div className="home-content"> 
         <h1>Hi, I'm João! Welcome to my personal website.</h1> 
         <p>Explore my projects, skills, and more.</p>

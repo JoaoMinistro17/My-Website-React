@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{}"
+self.__REACT_LOADABLE_MANIFEST="{\"app\\\\page.jsx -> ./components/ParticleAnimation\":{\"id\":\"app\\\\page.jsx -> ./components/ParticleAnimation\",\"files\":[\"static/chunks/_app-pages-browser_app_components_ParticleAnimation_jsx.js\"]}}"
