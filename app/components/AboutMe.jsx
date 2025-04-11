@@ -29,20 +29,17 @@ function AboutMe() {
   return (
     <div className={`aboutme ${isVisible ? 'animate' : ''}`} id="about" ref={containerRef}>
 
-      <h1 className={`aboutme__title ${isVisible}`}>About Me</h1>
+      <h1 className={`aboutme__title ${isVisible}`}>✍️ About Me</h1>
 
-      <h1 className={`aboutme__subtitle ${isVisible}`}>Information Systems Engineer</h1>
+      <h1 className={`aboutme__subtitle ${isVisible}`}>I'm a Software Developer</h1>
       <p className={`aboutme__description ${isVisible}`}>
-        I'm passionate about exploring the world through technology. <br />
-      </p>
-      <p className={`aboutme__description ${isVisible}`}>
-        In this field I find a way to create, 
-        where logic and creativity merge to solve problems and turn ideas into reality.
+        This is where I find a way to be creative and logical at the same time. <br /> <br />
+        As you can see I enjoy to build things, like this website! <br /> <br />
       </p>
 
-      <h1 className={`aboutme__subtitle ${isVisible}`}>Free Time</h1>
+      <h1 className={`aboutme__subtitle ${isVisible}`}>💭 Free Time</h1>
       <p className={`aboutme__description ${isVisible}`}>
-        My 4 most fulfilling hobbies currently are: Books, piano, football and videogames.
+        Currently my free time is spent reading books, playing piano and learning new things.
       </p>
     </div>
   );

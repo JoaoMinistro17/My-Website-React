@@ -23,12 +23,12 @@ a {
   align-items: center;
   justify-content: space-around;
   height: 8vh;
-  /*background: rgb(0, 33, 65);*/
-  /*background: linear-gradient(180deg, rgba(0,33,65,1) 0%, rgba(0,33,65,0) 100%);*/
+  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
   position: fixed; /* Make the navbar fixed */
-  top: 0; /* Position it at the top */
-  width: 100%; /* Make it span the full width */
-  z-index: 1000; /* Ensure it stays above other content */
+  top: 0;
+  width: 100%; 
+  z-index: 1000; 
+  cursor: pointer;
 
 }
 .nav__brand {

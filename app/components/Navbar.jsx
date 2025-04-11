@@ -19,9 +19,7 @@ export default function Navbar() {
 
   return (
     <nav className="nav">
-      <a href="#" className="nav__brand">
-        {/* Brand Logo or Name */}
-      </a>
+      <a href="#" className="nav__brand"></a>
       <ul className={active}>
         <li className="nav__item">
           <a className="nav__link" onClick={() => {

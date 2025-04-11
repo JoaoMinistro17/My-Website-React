@@ -19,16 +19,22 @@
 }
 
 .aboutme__subtitle{
-  margin-top: 100px;
+  margin-top: 70px;
+  margin-bottom: 30px;
   font-size: 3rem;
-  color: blueviolet; /* Texto branco */
-  margin-bottom: 20px;
+  color: #6a5acd;
 }
 
 .aboutme__description {
   font-size: 2rem;
-  color: whitesmoke; /* Texto branco */
+  color: hsl(0, 0%, 68%); 
   margin-bottom: 10px;
+
+  color: hsl(0, 0%, 68%);
+  font-weight: bold!important;
+  font-family: "Anonymous Pro", monospace!important;
+  overflow: visible; /* Allow content to flow naturally */
+  text-align: center; /* Center-align the text */
 }
 
 .aboutme__skills {

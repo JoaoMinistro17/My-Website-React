@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import '../css/portfolio.css';
 
+import { DiNodejs, DiReact } from "react-icons/di";
+
 export default function Portfolio() {
 
  const containerRef = useRef(null);
@@ -13,8 +15,8 @@ export default function Portfolio() {
 
   const options = {
     root: null,
-    rootMargin: "100px",
-    threshold: 0.4
+    rootMargin: "0px",
+    threshold: 0.3
   }
 
   useEffect(() => {
@@ -30,28 +32,37 @@ export default function Portfolio() {
 
 
   return (
+    
     <div className={`portfolio ${isVisible ? 'animate' : ''}`} id="portfolio" ref={containerRef}>
 
-      <h1 className={`portfolio__title ${isVisible}`}>Portfolio</h1>
+      <h1 className={`portfolio__title ${isVisible}`}> 🧑‍💻 Portfolio</h1> <br /> 
 
-      <h1 className={`portfolio__subtitle ${isVisible}`}>Simple Ticket HelpDesk</h1>
-      <p className={`portfolio__description ${isVisible}`}>
-        Lorem Ipsum 
-      </p>
-      <img src="img/desafio-fullstack-junior.png" alt="Project 1 Home" className="portfolio__image" />
+      <DiNodejs color='lightgreen' size={100}/> <DiReact color='lightblue' size={100}/>
+      
 
-      <h1 className={`portfolio__subtitle ${isVisible}`}>Project 2</h1>
-      <p className={`portfolio__description ${isVisible}`}>
-        <br /> I did this project with this framework, solved x and y problem. <br />
+      {/* <!-- Load the icons of the technologies i'm using, in this case, React and ExpressJS --> */}
+      <h1 className={`portfolio__subtitle ${isVisible}`}>HelpDesk Web App</h1>
+      <p className={`portfolio__description ${isVisible}`} size={100}>
+          Create tickets directed to other departments (e.g., IT → HR) <br /> <br />
+          Filter tickets by name or status <br /> <br />
+          User and Admin roles <br /> <br />
+        <img src="img/desafio-fullstack-junior-2.png" alt="Project 1" className="portfolio__image" />
+        <img src="img/desafio-fullstack-junior-3.png" alt="Project 1" className="portfolio__image" />
+        <br /> 🔔 Things to improve <br /> 
+          Countdown timers and alerts for tickets <br />
+          Mark tickets as Low, Medium, or High priority <br />
+          View ticket history and activity <br /> 
+          Add comments and attach files <br />  <br />  
       </p>
-      <p className={`portfolio__description ${isVisible}`}>
-        Reminder to be valuable and solve problems for others.
-      </p>
-      <img src="img/desafio-fullstack-junior.png" alt="Project 2 Home" className="portfolio__image" />
 
-      <a href="/cv-joao-ministro.pdf" download="joao-ministro-portfolio.pdf" className="portfolio__download">
-        Download Portfolio PDF
-      </a>
+      <h1 className={`portfolio__subtitle ${isVisible}`}>E-commerce API (Sequelize, MVC)</h1>
+      <p className={`portfolio__description ${isVisible}`}>
+        Secure and modular, scalable RESTful API <br /> <br />
+        User authentication (JWT and bcrypt) <br /> <br />
+        Role-based access <br /> <br />
+        Core e-commerce features (product listing, cart structure, order handling, etc.) <br />
+      </p>
+      <img src="test.png" alt="Project 2" className="portfolio__image" />
     </div>
   );
 }

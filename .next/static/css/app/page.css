@@ -1,5 +1,5 @@
 /*!**********************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/page.css ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./app/page.css ***!
   \**********************************************************************************************************************************************************************************************************************************************************/
 html, body {
   margin: 0;
@@ -18,7 +18,7 @@ html, body {
   min-height: 100vh; /* Ensure the page is tall enough to scroll */
   max-height: 100vh;
   z-index: 1; /* Ensure content is above the background */
-  background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.7) 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
 
 .background {
@@ -44,20 +44,31 @@ html, body {
 }
 
 /* Position the background image absolutely */
-.header {
+.home-content {
+  position: relative;
+  overflow: visible; /* Allow content to flow naturally */
+  color: hsl(0, 0%, 68%);
+  font-weight: bold!important;
+  font-family: "Anonymous Pro", monospace!important;
+  overflow: visible; /* Allow content to flow naturally */
+  white-space: normal; /* Allow text to wrap */
+  text-align: center; /* Center-align the text */
+  line-height: 1.5; /* Improve line spacing */
+  margin-top: 20%; /* Add some space from the top */
+}
+
+.quote {
   position: relative;
   color: hsl(0, 0%, 68%);
   font-weight: bold!important;
   font-family: "Anonymous Pro", monospace!important;
-  letter-spacing: 7px!important;
   overflow: hidden;
-  border-right: 2px solid hsl(0, 0%, 80%);
   white-space: nowrap;
-  animation: typewriter 2s steps(40) 0.5s 1 normal both,
-  blinkTextCursor 800ms infinite;
+  animation:  typewriter 4s steps(200) 1s 1 normal both;
   text-align: left;
-  margin-top: 750px;
-  margin-left: 60%;
+  margin-left: 5%;
+  font-size: 1rem; /* Reduza o tamanho da fonte aqui */
+  margin-top: 400px;
 }
 
 @keyframes typewriter {
@@ -65,15 +76,7 @@ html, body {
     width: 0px;
   }
   to {
-    width: 650px;
-  }
-}
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: hsl(0, 0%, 80%);
-  }
-  to {
-    border-right-color: transparent;
+    width: 100%;
   }
 }
 
@@ -95,15 +98,72 @@ html, body {
   background: #000;
 }
 /*!****************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/css/footer.css ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./app/css/footer.css ***!
   \****************************************************************************************************************************************************************************************************************************************************************/
-.footer{
-    text-align: right;
-    margin-right: 100px;
-    margin-bottom: 10px;
-  }
+.footer {
+  display: flex;
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center;     /* Alinha os itens verticalmente */
+  gap: 30px;               /* Adiciona espaço entre os elementos */
+  padding: 20px;
+  color: white;
+  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%); /* Gradiente de fundo */
+  margin-top: 200px;
+}
+
+.footer__copyright{
+  margin: 0;
+  font-size: 1rem;  /* Tamanho de fonte ajustado */
+  font-family: 'Roboto', sans-serif;
+  color: hsl(0, 0%, 68%); /* Cor do texto ajustada */
+  text-align: center; /* Centraliza o texto */
+  line-height: 1.5;   /* Melhora o espaçamento entre linhas */
+  margin-right: 300px;
+  text-decoration: none; /* Remove o sublinhado do texto */
+  transition: color 0.3s ease-in-out; /* Transição suave para a cor */
+}
+
+.footer__madeby {
+  margin: 0;
+  font-size: 1.5rem;  /* Tamanho de fonte ajustado */
+  font-family: 'Roboto', sans-serif;
+  color: hsl(0, 0%, 68%); /* Cor do texto ajustada */
+  text-align: center; /* Centraliza o texto */
+  line-height: 1.5;   /* Melhora o espaçamento entre linhas */
+  margin-right: 500px;
+  text-decoration: none; /* Remove o sublinhado do texto */
+  transition: color 0.3s ease-in-out; /* Transição suave para a cor */
+}
+
+.footer__socials {
+  margin: 0;
+  font-size: 1.5rem;  /* Tamanho de fonte ajustado */
+  font-family: 'Roboto', sans-serif;
+  color: hsl(0, 0%, 68%); /* Cor do texto ajustada */
+  text-align: center; /* Centraliza o texto */
+  line-height: 1.5;   /* Melhora o espaçamento entre linhas */
+}
+
+.footer a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer a:hover {
+  transform: scale(1.1); /* Efeito de zoom nos ícones ao passar o mouse */
+}
+
+.footer svg {
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer svg:hover {
+  transform: scale(1.1); /* Efeito de zoom no ícone ao passar o mouse */
+}
 /*!****************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/css/navbar.css ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./app/css/navbar.css ***!
   \****************************************************************************************************************************************************************************************************************************************************************/
 *,
 *::after,
@@ -130,12 +190,12 @@ a {
   align-items: center;
   justify-content: space-around;
   height: 8vh;
-  /*background: rgb(0, 33, 65);*/
-  /*background: linear-gradient(180deg, rgba(0,33,65,1) 0%, rgba(0,33,65,0) 100%);*/
+  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
   position: fixed; /* Make the navbar fixed */
-  top: 0; /* Position it at the top */
-  width: 100%; /* Make it span the full width */
-  z-index: 1000; /* Ensure it stays above other content */
+  top: 0;
+  width: 100%; 
+  z-index: 1000; 
+  cursor: pointer;
 
 }
 .nav__brand {
@@ -198,7 +258,7 @@ a {
   transform: rotate(45deg) translate(-4px, -5px);
 }
 /*!*****************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/css/aboutme.css ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./app/css/aboutme.css ***!
   \*****************************************************************************************************************************************************************************************************************************************************************/
 .aboutme {
   padding: 20px;
@@ -221,16 +281,22 @@ a {
 }
 
 .aboutme__subtitle{
-  margin-top: 100px;
+  margin-top: 70px;
+  margin-bottom: 30px;
   font-size: 3rem;
-  color: blueviolet; /* Texto branco */
-  margin-bottom: 20px;
+  color: #6a5acd;
 }
 
 .aboutme__description {
   font-size: 2rem;
-  color: whitesmoke; /* Texto branco */
+  color: hsl(0, 0%, 68%); 
   margin-bottom: 10px;
+
+  color: hsl(0, 0%, 68%);
+  font-weight: bold!important;
+  font-family: "Anonymous Pro", monospace!important;
+  overflow: visible; /* Allow content to flow naturally */
+  text-align: center; /* Center-align the text */
 }
 
 .aboutme__skills {
@@ -270,7 +336,7 @@ a {
   }
 }
 /*!*******************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/css/portfolio.css ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./app/css/portfolio.css ***!
   \*******************************************************************************************************************************************************************************************************************************************************************/
 .portfolio {
   padding: 20px;
@@ -287,29 +353,45 @@ a {
 }
 
 .portfolio__title {
-  margin-top: 200px;  
+  margin-top: 200px; 
   font-size: 5rem;
-  color: whitesmoke; /* Texto branco */
 }
 
 .portfolio__subtitle{
-  margin-top: 100px;
+  margin-top: 70px;
+  margin-bottom: 30px;
   font-size: 3rem;
-  color: blueviolet; /* Texto branco */
-  margin-bottom: 20px;
+  color: #6a5acd;
+
 }
 
 .portfolio__description {
   font-size: 2rem;
-  color: whitesmoke; /* Texto branco */
   margin-bottom: 10px;
+  color: hsl(0, 0%, 68%);
+  font-weight: bold!important;
+  font-family: "Anonymous Pro", monospace!important;
+  overflow: visible; /* Allow content to flow naturally */
+  text-align: center; /* Center-align the text */
 }
 
 .portfolio__image {
+  height: 450px;
+  
   margin-top: 20px;
-  max-width: 50%;
-  height: auto;
-  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  max-width: 40%; /* Reduced the maximum width for smaller images */
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for better visual appeal */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover effects */
+}
+
+.portfolio__image:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
 }
 
 .portfolio__download {
@@ -353,7 +435,7 @@ a {
 }
 
 /*!****************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/css/skills.css ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./app/css/skills.css ***!
   \****************************************************************************************************************************************************************************************************************************************************************/
 .skills {
   padding: 20px;
@@ -370,21 +452,25 @@ a {
 }
   
 .skills__title {
-  margin-top: 150px;  
-  font-size: 4rem;
-  color: whitesmoke; /* Texto branco */
+  margin-top: 200px; 
+  font-size: 5rem;
 }
 
 .skills__subtitle{
   margin-top: 70px;
-  margin-bottom: 20px;
-  font-size: 2.5rem;
-  color: blueviolet; /* Texto branco */
+  margin-bottom: 10px;
+  font-size: 3rem;
+  color: #6a5acd;
 }
 
 .skills__description {
-  font-size: 1.8rem;
-  color: whitesmoke; /* Texto branco */
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: hsl(0, 0%, 68%);
+  font-weight: bold!important;
+  font-family: "Anonymous Pro", monospace!important;
+  overflow: visible; /* Allow content to flow naturally */
+  text-align: center; /* Center-align the text */
 }
 
 .skills__list {
@@ -405,7 +491,7 @@ a {
   animation: slideInFromLeft 1s ease-in-out;
 }
 
-.animate .skills__description {
+.animate .skills__subtitle {
   animation: slideInFromRight 1s ease-in-out;
 }
 

@@ -1,5 +1,62 @@
-.footer{
-    text-align: right;
-    margin-right: 100px;
-    margin-bottom: 10px;
-  }
+.footer {
+  display: flex;
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center;     /* Alinha os itens verticalmente */
+  gap: 30px;               /* Adiciona espaço entre os elementos */
+  padding: 20px;
+  color: white;
+  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%); /* Gradiente de fundo */
+  margin-top: 200px;
+}
+
+.footer__copyright{
+  margin: 0;
+  font-size: 1rem;  /* Tamanho de fonte ajustado */
+  font-family: 'Roboto', sans-serif;
+  color: hsl(0, 0%, 68%); /* Cor do texto ajustada */
+  text-align: center; /* Centraliza o texto */
+  line-height: 1.5;   /* Melhora o espaçamento entre linhas */
+  margin-right: 300px;
+  text-decoration: none; /* Remove o sublinhado do texto */
+  transition: color 0.3s ease-in-out; /* Transição suave para a cor */
+}
+
+.footer__madeby {
+  margin: 0;
+  font-size: 1.5rem;  /* Tamanho de fonte ajustado */
+  font-family: 'Roboto', sans-serif;
+  color: hsl(0, 0%, 68%); /* Cor do texto ajustada */
+  text-align: center; /* Centraliza o texto */
+  line-height: 1.5;   /* Melhora o espaçamento entre linhas */
+  margin-right: 500px;
+  text-decoration: none; /* Remove o sublinhado do texto */
+  transition: color 0.3s ease-in-out; /* Transição suave para a cor */
+}
+
+.footer__socials {
+  margin: 0;
+  font-size: 1.5rem;  /* Tamanho de fonte ajustado */
+  font-family: 'Roboto', sans-serif;
+  color: hsl(0, 0%, 68%); /* Cor do texto ajustada */
+  text-align: center; /* Centraliza o texto */
+  line-height: 1.5;   /* Melhora o espaçamento entre linhas */
+}
+
+.footer a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer a:hover {
+  transform: scale(1.1); /* Efeito de zoom nos ícones ao passar o mouse */
+}
+
+.footer svg {
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer svg:hover {
+  transform: scale(1.1); /* Efeito de zoom no ícone ao passar o mouse */
+}

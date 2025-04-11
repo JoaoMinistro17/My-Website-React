@@ -15,7 +15,7 @@ html, body {
   min-height: 100vh; /* Ensure the page is tall enough to scroll */
   max-height: 100vh;
   z-index: 1; /* Ensure content is above the background */
-  background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.7) 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
 
 .background {
@@ -41,20 +41,31 @@ html, body {
 }
 
 /* Position the background image absolutely */
-.header {
+.home-content {
+  position: relative;
+  overflow: visible; /* Allow content to flow naturally */
+  color: hsl(0, 0%, 68%);
+  font-weight: bold!important;
+  font-family: "Anonymous Pro", monospace!important;
+  overflow: visible; /* Allow content to flow naturally */
+  white-space: normal; /* Allow text to wrap */
+  text-align: center; /* Center-align the text */
+  line-height: 1.5; /* Improve line spacing */
+  margin-top: 20%; /* Add some space from the top */
+}
+
+.quote {
   position: relative;
   color: hsl(0, 0%, 68%);
   font-weight: bold!important;
   font-family: "Anonymous Pro", monospace!important;
-  letter-spacing: 7px!important;
   overflow: hidden;
-  border-right: 2px solid hsl(0, 0%, 80%);
   white-space: nowrap;
-  animation: typewriter 2s steps(40) 0.5s 1 normal both,
-  blinkTextCursor 800ms infinite;
+  animation:  typewriter 4s steps(200) 1s 1 normal both;
   text-align: left;
-  margin-top: 750px;
-  margin-left: 60%;
+  margin-left: 5%;
+  font-size: 1rem; /* Reduza o tamanho da fonte aqui */
+  margin-top: 400px;
 }
 
 @keyframes typewriter {
@@ -62,15 +73,7 @@ html, body {
     width: 0px;
   }
   to {
-    width: 650px;
-  }
-}
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: hsl(0, 0%, 80%);
-  }
-  to {
-    border-right-color: transparent;
+    width: 100%;
   }
 }
 

@@ -13,21 +13,25 @@
 }
   
 .skills__title {
-  margin-top: 150px;  
-  font-size: 4rem;
-  color: whitesmoke; /* Texto branco */
+  margin-top: 200px; 
+  font-size: 5rem;
 }
 
 .skills__subtitle{
   margin-top: 70px;
-  margin-bottom: 20px;
-  font-size: 2.5rem;
-  color: blueviolet; /* Texto branco */
+  margin-bottom: 10px;
+  font-size: 3rem;
+  color: #6a5acd;
 }
 
 .skills__description {
-  font-size: 1.8rem;
-  color: whitesmoke; /* Texto branco */
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: hsl(0, 0%, 68%);
+  font-weight: bold!important;
+  font-family: "Anonymous Pro", monospace!important;
+  overflow: visible; /* Allow content to flow naturally */
+  text-align: center; /* Center-align the text */
 }
 
 .skills__list {
@@ -48,7 +52,7 @@
   animation: slideInFromLeft 1s ease-in-out;
 }
 
-.animate .skills__description {
+.animate .skills__subtitle {
   animation: slideInFromRight 1s ease-in-out;
 }
 
