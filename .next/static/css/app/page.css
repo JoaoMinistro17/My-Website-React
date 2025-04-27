@@ -287,6 +287,20 @@ a {
   color: #6a5acd;
 }
 
+.aboutme__highlight {
+  all: unset; /* Remove all default button styles */
+  color: #61ff89; /* Cor do texto destacado */
+  font-weight: bold;
+  font-family: "Anonymous Pro", monospace!important;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #61ff89;
+          text-decoration-color: #61ff89; /* Cor da sublinhado */
+  overflow: visible; /* Allow content to flow naturally */
+  text-align: center; /* Center-align the text */
+  cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
+
+}
+
 .aboutme__description {
   font-size: 2rem;
   color: hsl(0, 0%, 68%); 
@@ -334,6 +348,19 @@ a {
     transform: translateX(0);
     opacity: 1;
   }
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./app/css/books.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************/
+.book__title {
+    font-size: 2rem;
+    padding: 10px;
+    color: hsl(0, 0%, 68%);
+    font-weight: bold!important;
+    font-family: "Anonymous Pro", monospace!important;
+    color: #61ff89; /* Highlighted text color */
+    overflow: visible; /* Allow content to flow naturally */
+    text-align: center; /* Center-align the text */
 }
 /*!*******************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./app/css/portfolio.css ***!

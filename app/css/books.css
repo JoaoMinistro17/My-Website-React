@@ -1,0 +1,10 @@
+.book__title {
+    font-size: 2rem;
+    padding: 10px;
+    color: hsl(0, 0%, 68%);
+    font-weight: bold!important;
+    font-family: "Anonymous Pro", monospace!important;
+    color: #61ff89; /* Highlighted text color */
+    overflow: visible; /* Allow content to flow naturally */
+    text-align: center; /* Center-align the text */
+}

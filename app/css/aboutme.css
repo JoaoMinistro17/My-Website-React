@@ -25,6 +25,19 @@
   color: #6a5acd;
 }
 
+.aboutme__highlight {
+  all: unset; /* Remove all default button styles */
+  color: #61ff89; /* Cor do texto destacado */
+  font-weight: bold;
+  font-family: "Anonymous Pro", monospace!important;
+  text-decoration: underline;
+  text-decoration-color: #61ff89; /* Cor da sublinhado */
+  overflow: visible; /* Allow content to flow naturally */
+  text-align: center; /* Center-align the text */
+  cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
+
+}
+
 .aboutme__description {
   font-size: 2rem;
   color: hsl(0, 0%, 68%); 

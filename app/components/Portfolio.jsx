@@ -65,7 +65,7 @@ export default function Portfolio() {
 
       {/*<img src="test.png" alt="Project 2" className="portfolio__image" />*/}
 
-      <a href="/cv-joao-ministro.pdf" download="joao-ministro-portfolio.pdf" className="portfolio__download">
+      <a href="/cv-joao-ministro.pdf" download="joao-ministro-cv.pdf" className="portfolio__download">
         Download CV (PDF)
       </a>
     

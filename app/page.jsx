@@ -10,11 +10,8 @@ import Navbar from './components/Navbar';
 import AboutMe from './components/AboutMe';
 import Portfolio from './components/Portfolio';
 import Skills from './components/Skills';
-//import ParticleAnimation from './components/ParticleAnimation';
 import ScrollProgress from './components/ScrollProgress';
-
 import { SlArrowRight } from "react-icons/sl";
-import { APP_PATH_ROUTES_MANIFEST } from 'next/dist/shared/lib/constants';
 
 const ParticleAnimation = dynamic(() => import('./components/ParticleAnimation'), {
   ssr: false, 
