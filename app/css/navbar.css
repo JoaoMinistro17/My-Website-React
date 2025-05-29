@@ -31,6 +31,13 @@ a {
   cursor: pointer;
 
 }
+
+.nav__link:hover {
+  color: white;
+  transition: color 0.2s ease-in;
+  animation-delay: 100ms;
+}
+
 .nav__brand {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 2rem;

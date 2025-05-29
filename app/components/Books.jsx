@@ -11,6 +11,7 @@ function Books() {
         'LP7.jpg',
         'LP8.jpg',
         'LP9.jpg',
+        'LP10.jpg',
       ];
     
       const programmingBooks = [

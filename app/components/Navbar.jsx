@@ -51,7 +51,7 @@ export default function Navbar() {
         <li className="nav__item">
           <a className="nav__link" onClick={() => {
             document.getElementById("skills")?.scrollIntoView({ 
-              behavior: "smooth" 
+              behavior: "smooth"
             });
           }}>
             Skills
