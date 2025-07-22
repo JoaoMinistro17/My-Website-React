@@ -35,21 +35,15 @@ function AboutMe() {
       <h1 className={`aboutme__title ${isVisible}`}>✍️ About Me</h1>
       <h1 className={`aboutme__subtitle ${isVisible}`}>Software Developer</h1>
       <p className={`aboutme__description ${isVisible}`}>
-        I'm a software developer proficient at workflow automation and tracking systems <br /> <br />
-        Recently I've been diving deep into SQL and Data <br /> <br />
+        I'm a software developer aiming to take on greater responsibility and grow into a senior role <br />
+        — someone who can be a strong reference in the field, both technically and professionally. <br /> <br />
+        The technologies I'm currently enjoying the most is SQL for automation and tracking data. 
       </p>
-      <h1 className={`aboutme__subtitle ${isVisible}`}>What I'm (actually) good at</h1>
-      <ul className={`aboutme__description ${isVisible}`}>
-        <li>🧰 Automating boring stuff at work so humans can do human things (like complaining about meetings)</li>
-        <li>🗃️ Talking to databases in fluent SQL</li>
-        <li>🧪 Writing code that sometimes works on the first try (other times it builds character)</li>
-      </ul>
-
       <h1 className={`aboutme__subtitle ${isVisible}`}>💭 Meanwhile...</h1>
       <p className={`aboutme__description ${isVisible}`}>
-        I also{" "}
+        I also like to read{" "}
         <button className='aboutme__highlight' onClick={() => setShowBooks(!showBooks)} >
-           read books
+           books
         </button>
         , and I really enjoyed these:
       </p>
