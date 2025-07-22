@@ -21,7 +21,7 @@ export default function HomePage() {
 
   // Array of quotes
   const quotes = [
-    "He who has a why to live can bear almost any how. - Nietzsche",
+    "He who has a why can bear almost any how. - Nietzsche",
     "Without music, life would be a mistake. - Nietzsche",
     "That which does not kill us makes us stronger. - Nietzsche",
     "The higher we soar, the smaller we appear to those who cannot fly. - Nietzsche",
@@ -29,33 +29,36 @@ export default function HomePage() {
     "The individual has always had to struggle to keep from being overwhelmed by the tribe. - Nietzsche",
 
     "Man only likes to count his troubles; he doesn't calculate his happiness. - Dostoyevsky",
-    "The soul is healed by being with children. - Dostoyevsky",
     "The greatest happiness is to know the source of unhappiness. - Dostoyevsky",
-
+    "To go wrong in one's own way is better than to go right in someone else's. - Dostoyevsky",
+    
     "We are what we repeatedly do. Excellence, then, is not an act, but a habit. - Aristotle",
     "Knowing yourself is the beginning of all wisdom. - Aristotle",
 
     "Everyone thinks of changing the world, but no one thinks of changing himself. - Tolstoy",
     "If you want to be happy, be. - Tolstoy",
 
+    "Reading is the ultimate meta-skill that can be traded for anything. - Naval Ravikant",
+    "You make your own luck if you stay at it long enough. - Naval Ravikant",
+    "A fit body, a calm mind, a house full of love. These things cannot be bought — they must be earned. - Naval Ravikant",
+
     "Compare yourself to who you were yesterday, not to who someone else is today. - Jordan Peterson",
     "Treat yourself like someone you are responsible for helping. - Jordan Peterson",
     "If you fulfill your obligations every day, you don't need to worry about the future. - Jordan Peterson",
 
-    "Life is what happens when you're busy making other plans. - Lennon",
-    "In the end, we will remember not the words of our enemies, but the silence of our friends. - King",
-    "The only way to do great work is to love what you do. - Jobs",
+    "The unexamined life is not worth living. - Socrates",
+    "The meaning of life is to give life meaning. - Viktor Frankl",
+    "The mind is everything. What you think you become. - Buddha",
+
     "The best way to predict the future is to create it. - Drucker",
-    "The future belongs to those who believe in the beauty of their dreams. - Eleanor Roosevelt",
-    "The best revenge is massive success. - Trump",
     "You miss 100% of the shots you don't take. - Gretzky",
     "It always seems impossible until it's done. - Nelson Mandela",
     "Success usually comes to those who are too busy to be looking for it. - Ford",
-    "The only limit to our realization of tomorrow will be our doubts of today. - Roosevelt",
+    "The only limit to our realization of tomorrow will be our doubts of today. - Franklin D. Roosevelt",
     "The best way to predict your future is to create it. - Abraham Lincoln",
-    "Success is how high you bounce when you hit bottom. - Patton",
-    "Your time is limited, so don't waste it living someone else's life.” - Steve Jobs",
     "Some people don't like change, but you need to embrace change if the alternative is disaster. - Elon Musk",
+    "The only way to do great work is to love what you do. - Steve Jobs",
+    "Your time is limited, so don't waste it living someone else's life.” - Steve Jobs",
   ];
 
   // State to hold the random quote and its length

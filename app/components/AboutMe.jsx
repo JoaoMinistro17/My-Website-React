@@ -37,7 +37,7 @@ function AboutMe() {
       <p className={`aboutme__description ${isVisible}`}>
         I'm a software developer aiming to take on greater responsibility and grow into a senior role <br />
         — someone who can be a strong reference in the field, both technically and professionally. <br /> <br />
-        The technologies I'm currently enjoying the most is SQL for automation and tracking data. 
+        The technologies I'm currently using the most is C# and SQL for automation and tracking data. 
       </p>
       <h1 className={`aboutme__subtitle ${isVisible}`}>💭 Meanwhile...</h1>
       <p className={`aboutme__description ${isVisible}`}>

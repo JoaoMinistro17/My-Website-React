@@ -29,20 +29,25 @@ export default function Skills() {
     <div className={`skills ${isVisible ? 'animate' : ''}`} id="skills" ref={containerRef}>
     
       <h1 className={`skills__title ${isVisible }`}>🧠 Skills</h1>
-      <h1 className={`skills__subtitle ${isVisible }`}>Frontend</h1>      
+      <h1 className={`skills__subtitle ${isVisible }`}>Programming Languages</h1>      
       <p className={`skills__description `}>
-          Mostly React (Javascript)
+          C#, Java, JavaScript
       </p>
 
-      <h1 className={`skills__subtitle ${isVisible}`}>Backend</h1>
+      <h1 className={`skills__subtitle ${isVisible}`}>Frameworks and Tools</h1>
       <p className={`skills__description `}>
-          C# (.NET), Node.js, Express.js, SQL Server 
+          .NET, React, Node.js, Express.js
+      </p>
+
+      <h1 className={`skills__subtitle ${isVisible}`}>Databases</h1>
+      <p className={`skills__description `}>
+          SQL
       </p>
 
       <h1 className={`skills__subtitle ${isVisible}`}>Interpersonal Skills</h1>
       <p className={`skills__description `}>
-          Of course I have some interpersonal skills ✨<br /> <br />
-          Always willing to help, learn, teach, share, listen and have fun.
+          Conscious and grounded communicator, resilient under pressure, and adaptable to diverse teams and environments. <br /><br />
+          I value clear, mindful collaboration and bring a balanced, versatile approach to problem-solving.
       </p>
     </div>
   )

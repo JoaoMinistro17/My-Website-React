@@ -8,7 +8,7 @@ function Footer() {
         {/* <!-- Copyright --> */}
         <p className="footer__copyright">No copyright, no worries. Steal it if you want, I don't care. 😎</p>
         {/* <!-- Made by --> */}
-        <p className="footer__madeby">Made with ❤️ by João Ministro</p>
+        <p className="footer__madeby">Made with ❤️ by João Ministro (07/25)</p>
         {/* <!-- LinkedIn --> */}
         <a className="footer__socials" href='https://www.linkedin.com/in/joaoministro'> 
             <svg
