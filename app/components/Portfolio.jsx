@@ -51,6 +51,7 @@ export default function Portfolio() {
             <br />
             → User and Admin roles
             <br />
+            {/* Imagens deste projeto */}
             <img
               src="img/desafio-fullstack-junior-2.png"
               alt="Project 1"
@@ -61,6 +62,15 @@ export default function Portfolio() {
               alt="Project 1"
               className="portfolio__image"
             />
+            {/* Link para o github deste projeto */}
+            <a
+              href="https://github.com/JoaoMinistro17/HelpDesk-React-ExpressJS"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#61ff89" }}
+            >
+              View on GitHub
+            </a>
             {/*  
             <br />
             🔔 Things to improve <br />
@@ -81,7 +91,7 @@ export default function Portfolio() {
             <br />
             → User/Admin access <br />→ Core e-commerce features (product
             listing, cart structure, order handling, etc.)
-          </p>
+            {/* Imagens deste projeto */}
             <img
               src="img/innerlens-preview-1.png"
               alt="InnerLens Project"
@@ -92,6 +102,16 @@ export default function Portfolio() {
               alt="InnerLens Project"
               className="portfolio__image"
             />
+            {/* Link para o github deste projeto */}
+            <a
+              href="https://github.com/JoaoMinistro17/ecommerce-api"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#61ff89" }}
+            >
+              View on GitHub
+            </a>
+          </p>
         </div>
 
         {/* Projeto 3 */}
@@ -105,25 +125,37 @@ export default function Portfolio() {
             → Learn about your cognitive patterns, values, and personality
             traits <br />
             → Read articles on Carl Jung, Stoicism, and modern psychology <br />
+            {/* Imagens deste projeto */}
+            <img
+              src="img/innerlens-preview-1.png"
+              alt="InnerLens Project"
+              className="portfolio__image"
+            />
+            <img
+              src="img/innerlens-preview-2.png"
+              alt="InnerLens Project"
+              className="portfolio__image"
+            />
+            {/* Link para o github deste projeto */}
+            <a
+              href="https://github.com/JoaoMinistro17/InnerLens"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#61ff89" }}
+            >
+              View on GitHub
+            </a>
           </p>
-          <img
-            src="img/innerlens-preview-1.png"
-            alt="InnerLens Project"
-            className="portfolio__image"
-          />
-          <img
-            src="img/innerlens-preview-2.png"
-            alt="InnerLens Project"
-            className="portfolio__image"
-          />
+
           {/* Projeto 3
-          <br /> 🔔 Things to improve <br />
-          Add login system to track user progress <br />
-          More detailed quiz results with saving and sharing options <br />
-          Dynamic article recommendations based on quiz answers <br />
-          */}
+            <br /> 🔔 Things to improve <br />
+            Add login system to track user progress <br />
+            More detailed quiz results with saving and sharing options <br />
+            Dynamic article recommendations based on quiz answers <br />
+            */}
         </div>
-        {/* Aqui podes adicionar mais projetos */}
+
+        {/* Adicionar mais projetos aqui */}
       </div>
       <a
         href="/cv-joao-ministro.pdf"
