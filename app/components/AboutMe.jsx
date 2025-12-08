@@ -33,19 +33,17 @@ function AboutMe() {
   return (
     <div className={`aboutme ${isVisible ? 'animate' : ''}`} id="about" ref={containerRef}>
       <h1 className={`aboutme__title ${isVisible}`}>✍️ About Me</h1>
-      <h1 className={`aboutme__subtitle ${isVisible}`}>Software Developer</h1>
+      <h1 className={`aboutme__subtitle ${isVisible}`}>Software Engineer</h1>
       <p className={`aboutme__description ${isVisible}`}>
-        I'm a software developer aiming to take on greater responsibility and grow into a senior role <br />
-        — someone who can be a strong reference in the field, both technically and professionally. <br /> <br />
-        The technologies I'm currently using the most is C# and SQL for automation and tracking data. 
+        I can build websites, webapps (Ecom, Quizzes) and apps for traceability and alerts. <br />
       </p>
       <h1 className={`aboutme__subtitle ${isVisible}`}>💭 Meanwhile...</h1>
       <p className={`aboutme__description ${isVisible}`}>
-        I also like to read{" "}
+        Besides action,{" "}
         <button className='aboutme__highlight' onClick={() => setShowBooks(!showBooks)} >
-           books
+          reading 
         </button>
-        , and I really enjoyed these:
+        is the biggest catalyst for change.
       </p>
       {/* Renderizar a seção Books condicionalmente */}
       {showBooks && <Books />}
